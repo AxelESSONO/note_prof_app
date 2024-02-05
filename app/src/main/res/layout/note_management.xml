@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#4E4E4E"
+        app:strokeColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Type Note title"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/search_note_background"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:hint="Type Your Note"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:gravity="top"
+                android:background="@drawable/search_note_background"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginVertical="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="15dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:backgroundTint="#08A50E"
+                    app:cornerRadius="10dp"
+
+                    android:text="Add this note"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntu_bold"
+
+                    android:insetBottom="0dp"
+                    android:insetTop="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:backgroundTint="@color/white"
+                    app:strokeColor="#08A50E"
+                    app:strokeWidth="2dp"
+                    app:cornerRadius="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Cancel"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#08A50E"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:insetBottom="0dp"
+                    android:insetTop="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

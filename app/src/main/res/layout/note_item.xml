@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:strokeColor="@color/colorPrimary"
+        app:cardBackgroundColor="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/noteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Note title"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:fontFamily="@font/protest_riot_regular"
+                android:paddingStart="20dp"
+                android:gravity="center_vertical" />
+
+            <View
+                android:id="@+id/spacerOne"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+            <TextView
+                android:id="@+id/noteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textAlignment="center"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:maxLines="5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|end"
+                android:background="#101010">
+
+                <ImageView
+                    android:id="@+id/editNoteImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/round_edit_24"
+                    app:tint="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/update_delete_background" />
+
+                <ImageView
+                    android:id="@+id/deleteNoteImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/round_delete_24"
+                    android:layout_marginHorizontal="20dp"
+                    app:tint="@color/black"
+                    android:padding="8dp"
+                    android:background="@drawable/update_delete_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
