@@ -76,6 +76,9 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
 
+
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
 }
 
 

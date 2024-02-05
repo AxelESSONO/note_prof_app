@@ -13,6 +13,6 @@
         android:id="@+id/deleteAllItemMenu"
         android:title="@string/delete_all"
         android:icon="@drawable/round_delete_24"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
 </menu>
