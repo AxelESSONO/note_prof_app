@@ -29,4 +29,9 @@ class NoteViewModel(
     fun updateNote(note: Note) = viewModelScope.launch(Dispatchers.IO) {
         noteRepository.updateNote(note)
     }
+
+    fun searchNote(searchQuery: String?) : LiveData<List<Note>>{
+        return noteRepository.searchNote(searchQuery)
+    }
+
 }

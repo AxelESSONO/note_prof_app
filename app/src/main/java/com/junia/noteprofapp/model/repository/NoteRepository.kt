@@ -24,4 +24,7 @@ class NoteRepository(
     suspend fun updateNote(note: Note){
         noteDao.updateNote(note)
     }
+    fun searchNote(searchQuery: String?) : LiveData<List<Note>>{
+        return noteDao.searchNote(searchQuery)
+    }
 }
